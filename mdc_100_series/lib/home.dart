@@ -19,6 +19,7 @@ import 'model/product.dart';
 import 'model/products_repository.dart';
 import 'colors.dart';
 import 'supplemental/asymmetric_view.dart';
+import 'category_menu_page.dart';
 
 class HomePage extends StatelessWidget {
 
@@ -93,9 +94,9 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: Return an AsymmetricView (104)
     return AsymmetricView(
-        products: ProductsRepository.loadProducts(Category.all));
+        products: ProductsRepository.loadProducts(category));
     // TODO: Pass Category variable to AsymmetricView (104)
-    return Scaffold(
+      return Scaffold(
       // TODO: Add app bar (102)
       appBar: AppBar(
         // TODO: Add buttons and title (102)
